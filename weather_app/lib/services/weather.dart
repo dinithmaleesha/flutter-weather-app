@@ -18,7 +18,7 @@ class Weather {
     // make the request
     try {
       Response response = await get(Uri.parse(
-          'your weatherapi'));
+          'your weatherapi')); // Replace 'your weatherapi' with the actual API endpoint URL
       Map data = jsonDecode(response.body);
 
       tempCelsius = data['current']['temp_c'];
